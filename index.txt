@@ -1,0 +1,177 @@
+1:"$Sreact.fragment"
+3:I[3719,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-f6b0b3b7dcc1b499.js"],"ThemeProvider"]
+4:I[310,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-f6b0b3b7dcc1b499.js"],"LocaleProvider"]
+5:I[4574,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-f6b0b3b7dcc1b499.js"],"default"]
+6:I[7555,[],""]
+7:I[1295,[],""]
+8:I[2548,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-f6b0b3b7dcc1b499.js"],"default"]
+9:I[6613,["461","static/chunks/461-a9a5d7b05a71d978.js","178","static/chunks/178-595a94b9af1e67b5.js","874","static/chunks/874-6cc630662f3664af.js","748","static/chunks/748-84df502d24ed20fb.js","974","static/chunks/app/page-3132ce2b4f6253a9.js"],"default"]
+e:I[9665,[],"MetadataBoundary"]
+10:I[9665,[],"OutletBoundary"]
+13:I[4911,[],"AsyncMetadataOutlet"]
+15:I[9665,[],"ViewportBoundary"]
+17:I[6614,[],""]
+:HL["/_next/static/css/220751dcb2cdf23d.css","style"]
+2:T5d7,
+    try {
+      const cfg = {"enabled":true,"locales":["zh","en"],"defaultLocale":"en","mode":"auto","fixedLocale":"en","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}};
+      const storageKey = 'locale-storage';
+      const normalize = (value) => typeof value === 'string' ? value.trim().replace('_', '-').toLowerCase() : '';
+      const matchLocale = (candidate) => {
+        const normalized = normalize(candidate);
+        if (!normalized) return null;
+        if (cfg.locales.includes(normalized)) return normalized;
+        const language = normalized.split('-')[0];
+        if (cfg.locales.includes(language)) return language;
+        return null;
+      };
+
+      let resolved = null;
+
+      if (!cfg.enabled) {
+        resolved = cfg.defaultLocale;
+      } else if (cfg.persist) {
+        resolved = matchLocale(localStorage.getItem(storageKey));
+      }
+
+      if (!resolved) {
+        if (cfg.mode === 'fixed') {
+          resolved = cfg.fixedLocale;
+        } else {
+          resolved = matchLocale(navigator.language);
+        }
+      }
+
+      if (!resolved) {
+        resolved = cfg.defaultLocale;
+      }
+
+      const root = document.documentElement;
+      root.lang = resolved;
+      root.setAttribute('data-locale', resolved);
+
+      if (cfg.persist) {
+        localStorage.setItem(storageKey, resolved);
+      }
+    } catch (e) {
+      const root = document.documentElement;
+      root.lang = 'en';
+      root.setAttribute('data-locale', 'en');
+    }
+  a:T58d,@article{Acta2026,
+  author = {Wang, Peng and Sun, Baoan and Wang, Gang and Ren, Jingli},
+  title = {Stacking pattern of short-range order units in binary metallic glasses:A hypergraph approach},
+  journal = {Acta Materialia},
+  year = {2026},
+  volume = {302},
+  pages = {121654},
+  month = {JAN 1},
+  abstract = {This study investigates stacking patterns between short-range order(SRO) units in three binary metallic glasses by establishing a framework 
+  combining hypergraph and molecular dynamics simulation. It is found by
+   maximal clique decomposition that SRO unit at 300 K stacking primarily
+   consists of ternary and quaternary maximal cliques, collectively
+   accounting for about 90% of the total. An exponential relationship
+   between maximal clique population and average atomic radius is established, where the absolute value of a
+   is related to atomic radius ratio. We report a close correlation between
+   the dynamic behavior of Nmc and the glass transition in metallic
+   glasses. A logistic growth model is presented to reveal the evolution of
+   Nmc from initial unlimited growth to hindered growth, with this
+   transition initiating at about 1.16Tg.},
+  doi = {10.1016/j.actamat.2025.121654},
+  langid = {english},
+  EarlyAccessDate = {OCT 2025},
+  ISSN = {1359-6454},
+  EISSN = {1873-2453},
+  ORCID-Numbers = {Ren, Jingli/0000-0002-5392-291X},
+  Unique-ID = {WOS:001615133600006}
+}b:T5ab,@article{DRM2024,
+  author = {Wang, Peng and Ren, Jingli},
+  title = {Reliable and explainable machine learning for charge transfer/atomic
+   structure relationships of hydrogenated nanodiamonds},
+  journal = {Diamond amd Related Materials},
+  year = {2024},
+  volume = {144},
+  pages = {110931},
+  month = {APR},
+  abstract = {A supervised learning model combined with genetic algorithm is proposed
+   to predict charge transfer efficiency of nanodiamonds. The model is
+   chosen among ten models whose parameters are modified by genetic
+   algorithm with ten -fold cross -validation, ensuring the accuracy of
+   model. Generalization ability and reliability are further verified by
+   prediction error and consistency tests of twin nanodiamonds. A
+   hydrogenated surface nanodiamond with low ionization potential and a
+   clean nanodiamond with low electron affinity are designed based on
+   particle swarm optimization. It is further found via SHAP analysis that
+   electron affinity is inhibited by surfaces with a \{111\} surface below
+   30 % or a \{100\} surface above 80%. Similarly, ionization potential
+   is reduced when the hybrid ratios of sp1 and sp2 are separately greater
+   than 0.501 % or lower than 5.690%.},
+  doi = {10.1016/j.diamond.2024.110931},
+  EarlyAccessDate = {MAR 2024},
+  ISSN = {0925-9635},
+  EISSN = {1879-0062},
+  ResearcherID-Numbers = {Ren, Jingli/NMJ-4568-2025},
+  Unique-ID = {WOS:001205750500001}
+}c:T58d,@article{Acta2026,
+  author = {Wang, Peng and Sun, Baoan and Wang, Gang and Ren, Jingli},
+  title = {Stacking pattern of short-range order units in binary metallic glasses:A hypergraph approach},
+  journal = {Acta Materialia},
+  year = {2026},
+  volume = {302},
+  pages = {121654},
+  month = {JAN 1},
+  abstract = {This study investigates stacking patterns between short-range order(SRO) units in three binary metallic glasses by establishing a framework 
+  combining hypergraph and molecular dynamics simulation. It is found by
+   maximal clique decomposition that SRO unit at 300 K stacking primarily
+   consists of ternary and quaternary maximal cliques, collectively
+   accounting for about 90% of the total. An exponential relationship
+   between maximal clique population and average atomic radius is established, where the absolute value of a
+   is related to atomic radius ratio. We report a close correlation between
+   the dynamic behavior of Nmc and the glass transition in metallic
+   glasses. A logistic growth model is presented to reveal the evolution of
+   Nmc from initial unlimited growth to hindered growth, with this
+   transition initiating at about 1.16Tg.},
+  doi = {10.1016/j.actamat.2025.121654},
+  langid = {english},
+  EarlyAccessDate = {OCT 2025},
+  ISSN = {1359-6454},
+  EISSN = {1873-2453},
+  ORCID-Numbers = {Ren, Jingli/0000-0002-5392-291X},
+  Unique-ID = {WOS:001615133600006}
+}d:T5ab,@article{DRM2024,
+  author = {Wang, Peng and Ren, Jingli},
+  title = {Reliable and explainable machine learning for charge transfer/atomic
+   structure relationships of hydrogenated nanodiamonds},
+  journal = {Diamond amd Related Materials},
+  year = {2024},
+  volume = {144},
+  pages = {110931},
+  month = {APR},
+  abstract = {A supervised learning model combined with genetic algorithm is proposed
+   to predict charge transfer efficiency of nanodiamonds. The model is
+   chosen among ten models whose parameters are modified by genetic
+   algorithm with ten -fold cross -validation, ensuring the accuracy of
+   model. Generalization ability and reliability are further verified by
+   prediction error and consistency tests of twin nanodiamonds. A
+   hydrogenated surface nanodiamond with low ionization potential and a
+   clean nanodiamond with low electron affinity are designed based on
+   particle swarm optimization. It is further found via SHAP analysis that
+   electron affinity is inhibited by surfaces with a \{111\} surface below
+   30 % or a \{100\} surface above 80%. Similarly, ionization potential
+   is reduced when the hybrid ratios of sp1 and sp2 are separately greater
+   than 0.501 % or lower than 5.690%.},
+  doi = {10.1016/j.diamond.2024.110931},
+  EarlyAccessDate = {MAR 2024},
+  ISSN = {0925-9635},
+  EISSN = {1879-0062},
+  ResearcherID-Numbers = {Ren, Jingli/NMJ-4568-2025},
+  Unique-ID = {WOS:001205750500001}
+}0:{"P":null,"b":"yi3QNSm1IywcBLnd0DsW2","p":"","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/220751dcb2cdf23d.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","link",null,{"rel":"dns-prefetch","href":"https://jialeliu.com"}],["$","link",null,{"rel":"preconnect","href":"https://jialeliu.com","crossOrigin":""}],["$","link",null,{"rel":"preload","as":"font","type":"font/woff2","href":"https://jialeliu.com/fonts/georgiab.woff2","crossOrigin":""}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              try {\n                const theme = localStorage.getItem('theme-storage');\n                const parsed = theme ? JSON.parse(theme) : null;\n                const setting = parsed?.state?.theme || 'system';\n                const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;\n                const effective = setting === 'dark' ? 'dark' : (setting === 'light' ? 'light' : (prefersDark ? 'dark' : 'light'));\n                var root = document.documentElement;\n                root.classList.add(effective);\n                root.setAttribute('data-theme', effective);\n              } catch (e) {\n                var root = document.documentElement;\n                root.classList.add('light');\n                root.setAttribute('data-theme', 'light');\n              }\n            "}}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],["$","body",null,{"className":"font-sans antialiased","children":["$","$L3",null,{"children":["$","$L4",null,{"config":{"enabled":true,"locales":["zh","en"],"defaultLocale":"en","mode":"auto","fixedLocale":"en","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}},"children":[["$","$L5",null,{"items":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Publications","type":"page","target":"publications","href":"/publications"},{"title":"Awards","type":"page","target":"awards","href":"/awards"},{"title":"Pictures","type":"page","target":"pictures","href":"/pictures"},{"title":"CV","type":"page","target":"cv","href":"/cv"}],"siteTitle":"Peng Wang","enableOnePageMode":false,"i18n":"$0:f:0:1:1:props:children:1:props:children:1:props:children:props:children:props:config","itemsByLocale":{"zh":[{"title":"关于我","type":"page","target":"about","href":"/"},{"title":"论文","type":"page","target":"publications","href":"/publications"},{"title":"奖项","type":"page","target":"awards","href":"/awards"},{"title":"照片","type":"page","target":"pictures","href":"/pictures"},{"title":"简历","type":"page","target":"cv","href":"/cv"}],"en":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Publications","type":"page","target":"publications","href":"/publications"},{"title":"Awards","type":"page","target":"awards","href":"/awards"},{"title":"Pictures","type":"page","target":"pictures","href":"/pictures"},{"title":"CV","type":"page","target":"cv","href":"/cv"}]},"siteTitleByLocale":{"zh":"王鹏","en":"Peng Wang"}}],["$","main",null,{"className":"min-h-screen pt-16 lg:pt-20","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$L8",null,{"lastUpdated":"May 28, 2026","lastUpdatedByLocale":{"zh":"2026年5月28日","en":"May 28, 2026"},"defaultLocale":"en"}]]}]}]}]]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L9",null,{"dataByLocale":{"zh":{"author":{"name":"王鹏","title":"博士生","institution":"郑州大学","avatar":"/Photo.jpg"},"social":{"email":"wangpeng0331@gs.zzu.edu.cn","location":"郑州，中国","location_url":"https://ditu.amap.com/","location_details":["数学与统计学院 105 室，","科学大道100号，郑州，中国"],"google_scholar":"https://scholar.google.com","orcid":"https://orcid.org","github":"https://github.com","linkedin":"https://linkedin.com"},"features":{"enable_likes":true,"enable_one_page_mode":false},"enableOnePageMode":false,"researchInterests":["应用数学","数据科学","材料基因","深度学习","计算材料"],"pagesToShow":[{"type":"about","id":"about","sections":[{"id":"about","type":"markdown","source":"bio.md","title":"关于我","content":"我目前是郑州大学数学与统计学院博士生，导师是 [任景莉教授](https://www5.zzu.edu.cn/math/info/1076/3679.htm)。\r\n\r\n此前，我在郑州大学获得理学硕士学位。\r\n\r\n我的研究聚焦于数据科学与材料科学的交叉领域，运用机器学习、数据挖掘与统计分析方法，揭示材料隐性的构效关系，加速新材料发现。"},{"id":"featured_publications","type":"publications","title":"精选论文","filter":"selected","limit":5,"publications":[{"id":"Acta2026","title":"Stacking pattern of short-range order units in binary metallic glasses:A hypergraph approach","titleNodes":[{"type":"text","text":"Stacking pattern of short-range order units in binary metallic glasses:A hypergraph approach"}],"authors":[{"name":"Peng Wang","isHighlighted":true,"isCorresponding":false,"isCoAuthor":false},{"name":"Baoan Sun","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Gang Wang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Jingli Ren","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false}],"year":2026,"month":"JAN 1","type":"journal","status":"published","tags":["Hypergraph; Short range order; Maximal clique; Exponential relationship; Binary metallic glass"],"keywords":"$0:f:0:1:2:children:1:props:children:0:props:dataByLocale:zh:pagesToShow:0:sections:1:publications:0:tags","researchArea":"machine-learning","journal":"Acta Materialia","conference":"","volume":"302","pages":"121654","doi":"10.1016/j.actamat.2025.121654","abstract":"This study investigates stacking patterns between short-range order(SRO) units in three binary metallic glasses by establishing a framework combining hypergraph and molecular dynamics simulation. It is found by maximal clique decomposition that SRO unit at 300 K stacking primarily consists of ternary and quaternary maximal cliques, collectively accounting for about 90% of the total. An exponential relationship between maximal clique population and average atomic radius is established, where the absolute value of a is related to atomic radius ratio. We report a close correlation between the dynamic behavior of Nmc and the glass transition in metallic glasses. A logistic growth model is presented to reveal the evolution of Nmc from initial unlimited growth to hindered growth, with this transition initiating at about 1.16Tg.","description":"This study investigates stacking patterns between short-range order(SRO) units in three binary metallic glasses by establishing a framework combining hypergraph and molecular dynamics simulation.","selected":true,"preview":"Acta2026.png","bibtex":"$a"},{"id":"DRM2024","title":"Reliable and explainable machine learning for charge transfer/atomic structure relationships of hydrogenated nanodiamonds","titleNodes":[{"type":"text","text":"Reliable and explainable machine learning for charge transfer/atomic\r\n   structure relationships of hydrogenated nanodiamonds"}],"authors":[{"name":"Peng Wang","isHighlighted":true,"isCorresponding":false,"isCoAuthor":false},{"name":"Jingli Ren","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false}],"year":2024,"month":"4","type":"journal","status":"published","tags":[],"keywords":"$0:f:0:1:2:children:1:props:children:0:props:dataByLocale:zh:pagesToShow:0:sections:1:publications:1:tags","researchArea":"machine-learning","journal":"Diamond amd Related Materials","conference":"","volume":"144","pages":"110931","doi":"10.1016/j.diamond.2024.110931","abstract":"A supervised learning model combined with genetic algorithm is proposed to predict charge transfer efficiency of nanodiamonds. The model is chosen among ten models whose parameters are modified by genetic algorithm with ten -fold cross -validation, ensuring the accuracy of model. Generalization ability and reliability are further verified by prediction error and consistency tests of twin nanodiamonds. A hydrogenated surface nanodiamond with low ionization potential and a clean nanodiamond with low electron affinity are designed based on particle swarm optimization. It is further found via SHAP analysis that electron affinity is inhibited by surfaces with a {111} surface below 30 % or a {100} surface above 80%. Similarly, ionization potential is reduced when the hybrid ratios of sp1 and sp2 are separately greater than 0.501 % or lower than 5.690%.","description":"A supervised learning model combined with genetic algorithm is proposed to predict charge transfer efficiency of nanodiamonds.","selected":true,"preview":"DRM2024.png","bibtex":"$b"}]},{"id":"news","type":"list","title":"动态","source":"news.toml","items":[{"date":"2025-10","content":"我们的工作被顶级期刊接收了 🎉"},{"date":"2024-09","content":"在郑州大学开始博士学习"}]}]}]},"en":{"author":{"name":"Peng Wang","title":"PhD Student","institution":"ZhengZhou University","avatar":"/Photo.jpg"},"social":{"email":"wangpeng0331@gs.zzu.edu.cn","location":"ZhengZhou, China","location_url":"https://ditu.amap.com/","location_details":["Room 105, School of Mathematics and Statistics,","ZhengZhou University, ZhengZhou, China"],"google_scholar":"https://scholar.google.com","orcid":"https://orcid.org","github":"https://github.com","linkedin":"https://linkedin.com"},"features":{"enable_likes":true,"enable_one_page_mode":false},"enableOnePageMode":false,"researchInterests":["Applied Mathematics","Data Science","Material Genomics","Deep Learning","Calculate materials"],"pagesToShow":[{"type":"about","id":"about","sections":[{"id":"about","type":"markdown","source":"bio.md","title":"About","content":"I am a PhD student at the School of Science, Zhengzhou University, advised by [Prof. Jingli Ren](https://example.com).\r\n\r\nPrior to this, I obtained a Master degree in Science from Zhengzhou University.\r\n\r\nMy research is centered on the intersection of data science and materials science, using machine learning, data mining and statistical analysis methods to reveal the hidden structure-function relationships of materials and accelerate the discovery of new materials."},{"id":"featured_publications","type":"publications","title":"Selected Publications","filter":"selected","limit":5,"publications":[{"id":"Acta2026","title":"Stacking pattern of short-range order units in binary metallic glasses:A hypergraph approach","titleNodes":[{"type":"text","text":"Stacking pattern of short-range order units in binary metallic glasses:A hypergraph approach"}],"authors":[{"name":"Peng Wang","isHighlighted":true,"isCorresponding":false,"isCoAuthor":false},{"name":"Baoan Sun","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Gang Wang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Jingli Ren","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false}],"year":2026,"month":"JAN 1","type":"journal","status":"published","tags":["Hypergraph; Short range order; Maximal clique; Exponential relationship; Binary metallic glass"],"keywords":"$0:f:0:1:2:children:1:props:children:0:props:dataByLocale:en:pagesToShow:0:sections:1:publications:0:tags","researchArea":"machine-learning","journal":"Acta Materialia","conference":"","volume":"302","pages":"121654","doi":"10.1016/j.actamat.2025.121654","abstract":"This study investigates stacking patterns between short-range order(SRO) units in three binary metallic glasses by establishing a framework combining hypergraph and molecular dynamics simulation. It is found by maximal clique decomposition that SRO unit at 300 K stacking primarily consists of ternary and quaternary maximal cliques, collectively accounting for about 90% of the total. An exponential relationship between maximal clique population and average atomic radius is established, where the absolute value of a is related to atomic radius ratio. We report a close correlation between the dynamic behavior of Nmc and the glass transition in metallic glasses. A logistic growth model is presented to reveal the evolution of Nmc from initial unlimited growth to hindered growth, with this transition initiating at about 1.16Tg.","description":"This study investigates stacking patterns between short-range order(SRO) units in three binary metallic glasses by establishing a framework combining hypergraph and molecular dynamics simulation.","selected":true,"preview":"Acta2026.png","bibtex":"$c"},{"id":"DRM2024","title":"Reliable and explainable machine learning for charge transfer/atomic structure relationships of hydrogenated nanodiamonds","titleNodes":[{"type":"text","text":"Reliable and explainable machine learning for charge transfer/atomic\r\n   structure relationships of hydrogenated nanodiamonds"}],"authors":[{"name":"Peng Wang","isHighlighted":true,"isCorresponding":false,"isCoAuthor":false},{"name":"Jingli Ren","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false}],"year":2024,"month":"4","type":"journal","status":"published","tags":[],"keywords":"$0:f:0:1:2:children:1:props:children:0:props:dataByLocale:en:pagesToShow:0:sections:1:publications:1:tags","researchArea":"machine-learning","journal":"Diamond amd Related Materials","conference":"","volume":"144","pages":"110931","doi":"10.1016/j.diamond.2024.110931","abstract":"A supervised learning model combined with genetic algorithm is proposed to predict charge transfer efficiency of nanodiamonds. The model is chosen among ten models whose parameters are modified by genetic algorithm with ten -fold cross -validation, ensuring the accuracy of model. Generalization ability and reliability are further verified by prediction error and consistency tests of twin nanodiamonds. A hydrogenated surface nanodiamond with low ionization potential and a clean nanodiamond with low electron affinity are designed based on particle swarm optimization. It is further found via SHAP analysis that electron affinity is inhibited by surfaces with a {111} surface below 30 % or a {100} surface above 80%. Similarly, ionization potential is reduced when the hybrid ratios of sp1 and sp2 are separately greater than 0.501 % or lower than 5.690%.","description":"A supervised learning model combined with genetic algorithm is proposed to predict charge transfer efficiency of nanodiamonds.","selected":true,"preview":"DRM2024.png","bibtex":"$d"}]},{"id":"news","type":"list","title":"News","source":"news.toml","items":[{"date":"2025-10","content":"Our work has been accepted by a prestigious journal 🎉"},{"date":"2024-09","content":"Starting my PhD at ZhengZhou University"}]}]}]}},"defaultLocale":"en"}],["$","$Le",null,{"children":"$Lf"}],null,["$","$L10",null,{"children":["$L11","$L12",["$","$L13",null,{"promise":"$@14"}]]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","muLeTfjbYShvnR1K1cLho",{"children":[["$","$L15",null,{"children":"$L16"}],null]}],null]}],false]],"m":"$undefined","G":["$17","$undefined"],"s":false,"S":true}
+18:"$Sreact.suspense"
+19:I[4911,[],"AsyncMetadata"]
+f:["$","$18",null,{"fallback":null,"children":["$","$L19",null,{"promise":"$@1a"}]}]
+12:null
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+11:null
+1a:{"metadata":[["$","title","0",{"children":"Peng Wang"}],["$","meta","1",{"name":"description","content":"PhD student at ZhengZhou University."}],["$","meta","2",{"name":"author","content":"Peng Wang"}],["$","meta","3",{"name":"keywords","content":"Peng Wang,PhD,Research,ZhengZhou University"}],["$","meta","4",{"name":"creator","content":"Peng Wang"}],["$","meta","5",{"name":"publisher","content":"Peng Wang"}],["$","meta","6",{"property":"og:title","content":"Peng Wang"}],["$","meta","7",{"property":"og:description","content":"PhD student at ZhengZhou University."}],["$","meta","8",{"property":"og:site_name","content":"Peng Wang's Academic Website"}],["$","meta","9",{"property":"og:locale","content":"en_US"}],["$","meta","10",{"property":"og:type","content":"website"}],["$","meta","11",{"name":"twitter:card","content":"summary"}],["$","meta","12",{"name":"twitter:title","content":"Peng Wang"}],["$","meta","13",{"name":"twitter:description","content":"PhD student at ZhengZhou University."}],["$","link","14",{"rel":"icon","href":"/favicon.svg"}]],"error":null,"digest":"$undefined"}
+14:{"metadata":"$1a:metadata","error":null,"digest":"$undefined"}
