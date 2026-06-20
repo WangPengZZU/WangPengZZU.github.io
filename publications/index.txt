@@ -1,0 +1,366 @@
+1:"$Sreact.fragment"
+3:I[3719,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-f6b0b3b7dcc1b499.js"],"ThemeProvider"]
+4:I[310,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-f6b0b3b7dcc1b499.js"],"LocaleProvider"]
+5:I[4574,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-f6b0b3b7dcc1b499.js"],"default"]
+6:I[7555,[],""]
+7:I[1295,[],""]
+8:I[2548,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-f6b0b3b7dcc1b499.js"],"default"]
+a:I[9665,[],"MetadataBoundary"]
+c:I[9665,[],"OutletBoundary"]
+f:I[4911,[],"AsyncMetadataOutlet"]
+11:I[9665,[],"ViewportBoundary"]
+13:I[6614,[],""]
+:HL["/_next/static/css/220751dcb2cdf23d.css","style"]
+2:T5d7,
+    try {
+      const cfg = {"enabled":true,"locales":["zh","en"],"defaultLocale":"en","mode":"auto","fixedLocale":"en","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}};
+      const storageKey = 'locale-storage';
+      const normalize = (value) => typeof value === 'string' ? value.trim().replace('_', '-').toLowerCase() : '';
+      const matchLocale = (candidate) => {
+        const normalized = normalize(candidate);
+        if (!normalized) return null;
+        if (cfg.locales.includes(normalized)) return normalized;
+        const language = normalized.split('-')[0];
+        if (cfg.locales.includes(language)) return language;
+        return null;
+      };
+
+      let resolved = null;
+
+      if (!cfg.enabled) {
+        resolved = cfg.defaultLocale;
+      } else if (cfg.persist) {
+        resolved = matchLocale(localStorage.getItem(storageKey));
+      }
+
+      if (!resolved) {
+        if (cfg.mode === 'fixed') {
+          resolved = cfg.fixedLocale;
+        } else {
+          resolved = matchLocale(navigator.language);
+        }
+      }
+
+      if (!resolved) {
+        resolved = cfg.defaultLocale;
+      }
+
+      const root = document.documentElement;
+      root.lang = resolved;
+      root.setAttribute('data-locale', resolved);
+
+      if (cfg.persist) {
+        localStorage.setItem(storageKey, resolved);
+      }
+    } catch (e) {
+      const root = document.documentElement;
+      root.lang = 'en';
+      root.setAttribute('data-locale', 'en');
+    }
+  0:{"P":null,"b":"yi3QNSm1IywcBLnd0DsW2","p":"","c":["","publications",""],"i":false,"f":[[["",{"children":[["slug","publications","d"],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/220751dcb2cdf23d.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","link",null,{"rel":"dns-prefetch","href":"https://jialeliu.com"}],["$","link",null,{"rel":"preconnect","href":"https://jialeliu.com","crossOrigin":""}],["$","link",null,{"rel":"preload","as":"font","type":"font/woff2","href":"https://jialeliu.com/fonts/georgiab.woff2","crossOrigin":""}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              try {\n                const theme = localStorage.getItem('theme-storage');\n                const parsed = theme ? JSON.parse(theme) : null;\n                const setting = parsed?.state?.theme || 'system';\n                const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;\n                const effective = setting === 'dark' ? 'dark' : (setting === 'light' ? 'light' : (prefersDark ? 'dark' : 'light'));\n                var root = document.documentElement;\n                root.classList.add(effective);\n                root.setAttribute('data-theme', effective);\n              } catch (e) {\n                var root = document.documentElement;\n                root.classList.add('light');\n                root.setAttribute('data-theme', 'light');\n              }\n            "}}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],["$","body",null,{"className":"font-sans antialiased","children":["$","$L3",null,{"children":["$","$L4",null,{"config":{"enabled":true,"locales":["zh","en"],"defaultLocale":"en","mode":"auto","fixedLocale":"en","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}},"children":[["$","$L5",null,{"items":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Publications","type":"page","target":"publications","href":"/publications"},{"title":"Awards","type":"page","target":"awards","href":"/awards"},{"title":"Pictures","type":"page","target":"pictures","href":"/pictures"},{"title":"CV","type":"page","target":"cv","href":"/cv"}],"siteTitle":"Peng Wang","enableOnePageMode":false,"i18n":"$0:f:0:1:1:props:children:1:props:children:1:props:children:props:children:props:config","itemsByLocale":{"zh":[{"title":"关于我","type":"page","target":"about","href":"/"},{"title":"论文","type":"page","target":"publications","href":"/publications"},{"title":"奖项","type":"page","target":"awards","href":"/awards"},{"title":"照片","type":"page","target":"pictures","href":"/pictures"},{"title":"简历","type":"page","target":"cv","href":"/cv"}],"en":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Publications","type":"page","target":"publications","href":"/publications"},{"title":"Awards","type":"page","target":"awards","href":"/awards"},{"title":"Pictures","type":"page","target":"pictures","href":"/pictures"},{"title":"CV","type":"page","target":"cv","href":"/cv"}]},"siteTitleByLocale":{"zh":"王鹏","en":"Peng Wang"}}],["$","main",null,{"className":"min-h-screen pt-16 lg:pt-20","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$L8",null,{"lastUpdated":"May 28, 2026","lastUpdatedByLocale":{"zh":"2026年5月28日","en":"May 28, 2026"},"defaultLocale":"en"}]]}]}]}]]}]]}],{"children":[["slug","publications","d"],["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L9",["$","$La",null,{"children":"$Lb"}],null,["$","$Lc",null,{"children":["$Ld","$Le",["$","$Lf",null,{"promise":"$@10"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","0bfcxd4mcCpDGs2Mjvq0x",{"children":[["$","$L11",null,{"children":"$L12"}],null]}],null]}],false]],"m":"$undefined","G":["$13","$undefined"],"s":false,"S":true}
+14:"$Sreact.suspense"
+15:I[4911,[],"AsyncMetadata"]
+17:I[2382,["461","static/chunks/461-a9a5d7b05a71d978.js","178","static/chunks/178-595a94b9af1e67b5.js","748","static/chunks/748-84df502d24ed20fb.js","182","static/chunks/app/%5Bslug%5D/page-ec89960424b50ea5.js"],"default"]
+b:["$","$14",null,{"fallback":null,"children":["$","$L15",null,{"promise":"$@16"}]}]
+18:T58d,@article{Acta2026,
+  author = {Wang, Peng and Sun, Baoan and Wang, Gang and Ren, Jingli},
+  title = {Stacking pattern of short-range order units in binary metallic glasses:A hypergraph approach},
+  journal = {Acta Materialia},
+  year = {2026},
+  volume = {302},
+  pages = {121654},
+  month = {JAN 1},
+  abstract = {This study investigates stacking patterns between short-range order(SRO) units in three binary metallic glasses by establishing a framework 
+  combining hypergraph and molecular dynamics simulation. It is found by
+   maximal clique decomposition that SRO unit at 300 K stacking primarily
+   consists of ternary and quaternary maximal cliques, collectively
+   accounting for about 90% of the total. An exponential relationship
+   between maximal clique population and average atomic radius is established, where the absolute value of a
+   is related to atomic radius ratio. We report a close correlation between
+   the dynamic behavior of Nmc and the glass transition in metallic
+   glasses. A logistic growth model is presented to reveal the evolution of
+   Nmc from initial unlimited growth to hindered growth, with this
+   transition initiating at about 1.16Tg.},
+  doi = {10.1016/j.actamat.2025.121654},
+  langid = {english},
+  EarlyAccessDate = {OCT 2025},
+  ISSN = {1359-6454},
+  EISSN = {1873-2453},
+  ORCID-Numbers = {Ren, Jingli/0000-0002-5392-291X},
+  Unique-ID = {WOS:001615133600006}
+}19:T6ef,Metallic glasses (MGs) that mainly made up of metallic elements are a new member of the glassy materials family. This new kind of glass combines the characteristics of liquids and solids, glasses and metals, making it fascinating to both scientists and industrialists. With the discovery of more and more systems, MG is becoming one of the most active research field in metallic materials, and some concepts and technologies derived from MGs also facilitate the development of other materials from quasi-crystals to high entropy alloys. MGs have now been successfully used in aerospace, robotics, medicine, consumer electronics, etc. and the practical applications of MGs are still growing. On the other hand, the diverse properties and the unique structure of the MGs render them ideal models to study major open issues including the structural model of disordered materials, glass transition, collective motion and energy landscape. However, understanding the emerging properties and phenomena of MGs still poses enormous challenges, which has stimulated a wealth of efforts, including the development of new experimental approaches, the synthesis of systems with tailored properties, and the advancements in experimental techniques, theoretical models, and numerical simulations. In this Roadmap, we try to provide a broad overview of recent and potential future activities in the MG field, and present a roadmap for the development and applications of MGs by gathering contributions form scientists with diverse backgrounds, illustrating the major challenges and discussing the latest technology and strategy to tackle these challenges with experts covering various developments in general concepts, synthesis and characterisation, and theoretical and simulation methods.1a:Td16,@article{MF2025,
+  author = {Wang, Wei-Hua and Zhao, Rui and Han, Rong and Shang, Ying-Hui and Yang,
+   Yong and Liu, Song-Ling and Zhang, Shi-Yun and Hu, Yuan-Chao and Sun,
+   Yi-Tao and Li, Ming-Xing and Shi, Ling-Xiang and Yao, Ke-Fu and Ma,
+   Jiang and Ke, Hai-Bo and Zhao, Yong and Zhang, Bo and Tong, Xing and
+   Bai, Hai-Yang and Liu, Si-Nan and Wu, Zhen-Duo and Lan, Si and Cheng, Qi
+   and Zhou, Jihan and Kang, Heng and Guan, Peng-Fei and Wu, Zhen-Wei and
+   Zhang, Hua-Ping and Luo, Peng and Shen, Lai-Quan and Yu, Hai-Bin and
+   Meng, Sen-Kuan and Wang, Zheng and Peng, Hai-Long and Ren, Shuai and
+   Tong, Yu and Song, Li-Jian and Huo, Jun-Tao and Wang, Jun-Qiang and Ren,
+   Jing-Li and Wang, Peng and Li, Mao-Zhi and Fan, Bei-Bei and Huang, Bo
+   and Yi, Jun and Bian, Xi-Lei and Wang, Qing and Wang, Gang and Jiang,
+   Min-Qiang and Wang, Yin-Xiao and Zhu, Zheng-Wang and Zhang, Hai-Feng and
+   Zhou, Chuan-Kun and Liu, Ming and Zhao, Shao-Fan and Zhou, Jing and Li,
+   Xue-Song and Sun, Bao-An and Lu, Zhen and Pang, Shu-Jie and Li, Hu-Yang
+   and Lin, Huai-Jun and Wang, Ji and Wang, Xing-Yao and Shen, Yu-Han and
+   Cao, Cheng-Rong and Tang, Ben-Zhen and Yu, Peng},
+  title = {Metallic glass roadmap},
+  journal = {Materials Futures},
+  year = {2025},
+  volume = {4},
+  number = {3},
+  pages = {033001},
+  month = {SEP 1},
+  abstract = {Metallic glasses (MGs) that mainly made up of metallic elements are a
+   new member of the glassy materials family. This new kind of glass
+   combines the characteristics of liquids and solids, glasses and metals,
+   making it fascinating to both scientists and industrialists. With the
+   discovery of more and more systems, MG is becoming one of the most
+   active research field in metallic materials, and some concepts and
+   technologies derived from MGs also facilitate the development of other
+   materials from quasi-crystals to high entropy alloys. MGs have now been
+   successfully used in aerospace, robotics, medicine, consumer
+   electronics, etc. and the practical applications of MGs are still
+   growing. On the other hand, the diverse properties and the unique
+   structure of the MGs render them ideal models to study major open issues
+   including the structural model of disordered materials, glass
+   transition, collective motion and energy landscape. However,
+   understanding the emerging properties and phenomena of MGs still poses
+   enormous challenges, which has stimulated a wealth of efforts, including
+   the development of new experimental approaches, the synthesis of systems
+   with tailored properties, and the advancements in experimental
+   techniques, theoretical models, and numerical simulations. In this
+   Roadmap, we try to provide a broad overview of recent and potential
+   future activities in the MG field, and present a roadmap for the
+   development and applications of MGs by gathering contributions form
+   scientists with diverse backgrounds, illustrating the major challenges
+   and discussing the latest technology and strategy to tackle these
+   challenges with experts covering various developments in general
+   concepts, synthesis and characterisation, and theoretical and simulation
+   methods.},
+  doi = {10.1088/2752-5724/adcfb6},
+  EISSN = {2752-5724},
+  Unique-ID = {WOS:001581828700001}
+}1b:T66a,It is a great challenge to optimize the composition and improve the multi-properties of Fe-based metallic glasses (Fe-based MGs) by traditional trial-and-error method. Here, a strategy combining ensemble learning (EL) and non-dominated sorting genetic algorithm-III (NSGA-III) is proposed to efficiently design Fe-based MGs with simultaneous high magnetic property, thermal stability and glass-forming ability (GFA). With alloy compositions as the sole input, four EL models and three linear models are employed to predict saturated magnetic flux density (Bs), onset crystallization temperature (Tx) and maximum casting diameter (Dmax) of Fe-based MGs, respectively. Particle swarm optimization (PSO) algorithm is introduced to optimize hyperparameters of the models. It is found that the PSO-CatBoost model and PSO-ET models with different hyperparameters can better predict Bs, Tx and Dmax with higher accuracy. Further, the effects of key compositions on three properties are qualitatively analyzed based on SHAP analysis and correlation analysis. Finally, taking Fe-B-Si-P-C system as an example, multi-objective optimization based on NSGA-III is executed to obtain Pareto front and 15 Pareto-optimal solutions for three properties. When the Bs is greater than 1.6 T, there are four alloys with Tx and Dmax better than the raw data. At this time, Tx increases by 5.02% to 8.07% and Dmax increases by 52.38% to 72.08%. It is also demonstrated that the sum of Fe and B content is the key factor affecting these three properties. This work provides an efficient strategy for developing new Fe-based MGs with better comprehensive performance.1c:T937,@article{JNCS2025,
+  author = {Mo, Runyu and Wang, Peng and Ren, Jingli},
+  title = {Multi-objective optimization of Fe-based metallic glasses on magnetic
+   property, thermal stability and glass forming ability},
+  journal = {Journal of Non-Crystalline Solids},
+  year = {2025},
+  volume = {666},
+  pages = {123666},
+  month = {OCT 15},
+  abstract = {It is a great challenge to optimize the composition and improve the
+   multi-properties of Fe-based metallic glasses (Fe-based MGs) by
+   traditional trial-and-error method. Here, a strategy combining ensemble
+   learning (EL) and non-dominated sorting genetic algorithm-III (NSGA-III)
+   is proposed to efficiently design Fe-based MGs with simultaneous high
+   magnetic property, thermal stability and glass-forming ability (GFA).
+   With alloy compositions as the sole input, four EL models and three
+   linear models are employed to predict saturated magnetic flux density
+   (Bs), onset crystallization temperature (Tx) and maximum casting
+   diameter (Dmax) of Fe-based MGs, respectively. Particle swarm
+   optimization (PSO) algorithm is introduced to optimize hyperparameters
+   of the models. It is found that the PSO-CatBoost model and PSO-ET models
+   with different hyperparameters can better predict Bs, Tx and Dmax with
+   higher accuracy. Further, the effects of key compositions on three
+   properties are qualitatively analyzed based on SHAP analysis and
+   correlation analysis. Finally, taking Fe-B-Si-P-C system as an example,
+   multi-objective optimization based on NSGA-III is executed to obtain
+   Pareto front and 15 Pareto-optimal solutions for three properties. When
+   the Bs is greater than 1.6 T, there are four alloys with Tx and Dmax
+   better than the raw data. At this time, Tx increases by 5.02\% to 8.07\%
+   and Dmax increases by 52.38\% to 72.08\%. It is also demonstrated that
+   the sum of Fe and B content is the key factor affecting these three
+   properties. This work provides an efficient strategy for developing new
+   Fe-based MGs with better comprehensive performance.},
+  doi = {10.1016/j.jnoncrysol.2025.123666},
+  EarlyAccessDate = {JUN 2025},
+  ISSN = {0022-3093},
+  EISSN = {1873-4812},
+  ResearcherID-Numbers = {Ren, Jingli/NMJ-4568-2025},
+  ORCID-Numbers = {Ren, Jingli/0000-0002-5392-291X},
+  Unique-ID = {WOS:001518583100001}
+}1d:T5ab,@article{DRM2024,
+  author = {Wang, Peng and Ren, Jingli},
+  title = {Reliable and explainable machine learning for charge transfer/atomic
+   structure relationships of hydrogenated nanodiamonds},
+  journal = {Diamond amd Related Materials},
+  year = {2024},
+  volume = {144},
+  pages = {110931},
+  month = {APR},
+  abstract = {A supervised learning model combined with genetic algorithm is proposed
+   to predict charge transfer efficiency of nanodiamonds. The model is
+   chosen among ten models whose parameters are modified by genetic
+   algorithm with ten -fold cross -validation, ensuring the accuracy of
+   model. Generalization ability and reliability are further verified by
+   prediction error and consistency tests of twin nanodiamonds. A
+   hydrogenated surface nanodiamond with low ionization potential and a
+   clean nanodiamond with low electron affinity are designed based on
+   particle swarm optimization. It is further found via SHAP analysis that
+   electron affinity is inhibited by surfaces with a \{111\} surface below
+   30 % or a \{100\} surface above 80%. Similarly, ionization potential
+   is reduced when the hybrid ratios of sp1 and sp2 are separately greater
+   than 0.501 % or lower than 5.690%.},
+  doi = {10.1016/j.diamond.2024.110931},
+  EarlyAccessDate = {MAR 2024},
+  ISSN = {0925-9635},
+  EISSN = {1879-0062},
+  ResearcherID-Numbers = {Ren, Jingli/NMJ-4568-2025},
+  Unique-ID = {WOS:001205750500001}
+}1e:T58d,@article{Acta2026,
+  author = {Wang, Peng and Sun, Baoan and Wang, Gang and Ren, Jingli},
+  title = {Stacking pattern of short-range order units in binary metallic glasses:A hypergraph approach},
+  journal = {Acta Materialia},
+  year = {2026},
+  volume = {302},
+  pages = {121654},
+  month = {JAN 1},
+  abstract = {This study investigates stacking patterns between short-range order(SRO) units in three binary metallic glasses by establishing a framework 
+  combining hypergraph and molecular dynamics simulation. It is found by
+   maximal clique decomposition that SRO unit at 300 K stacking primarily
+   consists of ternary and quaternary maximal cliques, collectively
+   accounting for about 90% of the total. An exponential relationship
+   between maximal clique population and average atomic radius is established, where the absolute value of a
+   is related to atomic radius ratio. We report a close correlation between
+   the dynamic behavior of Nmc and the glass transition in metallic
+   glasses. A logistic growth model is presented to reveal the evolution of
+   Nmc from initial unlimited growth to hindered growth, with this
+   transition initiating at about 1.16Tg.},
+  doi = {10.1016/j.actamat.2025.121654},
+  langid = {english},
+  EarlyAccessDate = {OCT 2025},
+  ISSN = {1359-6454},
+  EISSN = {1873-2453},
+  ORCID-Numbers = {Ren, Jingli/0000-0002-5392-291X},
+  Unique-ID = {WOS:001615133600006}
+}1f:T6ef,Metallic glasses (MGs) that mainly made up of metallic elements are a new member of the glassy materials family. This new kind of glass combines the characteristics of liquids and solids, glasses and metals, making it fascinating to both scientists and industrialists. With the discovery of more and more systems, MG is becoming one of the most active research field in metallic materials, and some concepts and technologies derived from MGs also facilitate the development of other materials from quasi-crystals to high entropy alloys. MGs have now been successfully used in aerospace, robotics, medicine, consumer electronics, etc. and the practical applications of MGs are still growing. On the other hand, the diverse properties and the unique structure of the MGs render them ideal models to study major open issues including the structural model of disordered materials, glass transition, collective motion and energy landscape. However, understanding the emerging properties and phenomena of MGs still poses enormous challenges, which has stimulated a wealth of efforts, including the development of new experimental approaches, the synthesis of systems with tailored properties, and the advancements in experimental techniques, theoretical models, and numerical simulations. In this Roadmap, we try to provide a broad overview of recent and potential future activities in the MG field, and present a roadmap for the development and applications of MGs by gathering contributions form scientists with diverse backgrounds, illustrating the major challenges and discussing the latest technology and strategy to tackle these challenges with experts covering various developments in general concepts, synthesis and characterisation, and theoretical and simulation methods.20:Td16,@article{MF2025,
+  author = {Wang, Wei-Hua and Zhao, Rui and Han, Rong and Shang, Ying-Hui and Yang,
+   Yong and Liu, Song-Ling and Zhang, Shi-Yun and Hu, Yuan-Chao and Sun,
+   Yi-Tao and Li, Ming-Xing and Shi, Ling-Xiang and Yao, Ke-Fu and Ma,
+   Jiang and Ke, Hai-Bo and Zhao, Yong and Zhang, Bo and Tong, Xing and
+   Bai, Hai-Yang and Liu, Si-Nan and Wu, Zhen-Duo and Lan, Si and Cheng, Qi
+   and Zhou, Jihan and Kang, Heng and Guan, Peng-Fei and Wu, Zhen-Wei and
+   Zhang, Hua-Ping and Luo, Peng and Shen, Lai-Quan and Yu, Hai-Bin and
+   Meng, Sen-Kuan and Wang, Zheng and Peng, Hai-Long and Ren, Shuai and
+   Tong, Yu and Song, Li-Jian and Huo, Jun-Tao and Wang, Jun-Qiang and Ren,
+   Jing-Li and Wang, Peng and Li, Mao-Zhi and Fan, Bei-Bei and Huang, Bo
+   and Yi, Jun and Bian, Xi-Lei and Wang, Qing and Wang, Gang and Jiang,
+   Min-Qiang and Wang, Yin-Xiao and Zhu, Zheng-Wang and Zhang, Hai-Feng and
+   Zhou, Chuan-Kun and Liu, Ming and Zhao, Shao-Fan and Zhou, Jing and Li,
+   Xue-Song and Sun, Bao-An and Lu, Zhen and Pang, Shu-Jie and Li, Hu-Yang
+   and Lin, Huai-Jun and Wang, Ji and Wang, Xing-Yao and Shen, Yu-Han and
+   Cao, Cheng-Rong and Tang, Ben-Zhen and Yu, Peng},
+  title = {Metallic glass roadmap},
+  journal = {Materials Futures},
+  year = {2025},
+  volume = {4},
+  number = {3},
+  pages = {033001},
+  month = {SEP 1},
+  abstract = {Metallic glasses (MGs) that mainly made up of metallic elements are a
+   new member of the glassy materials family. This new kind of glass
+   combines the characteristics of liquids and solids, glasses and metals,
+   making it fascinating to both scientists and industrialists. With the
+   discovery of more and more systems, MG is becoming one of the most
+   active research field in metallic materials, and some concepts and
+   technologies derived from MGs also facilitate the development of other
+   materials from quasi-crystals to high entropy alloys. MGs have now been
+   successfully used in aerospace, robotics, medicine, consumer
+   electronics, etc. and the practical applications of MGs are still
+   growing. On the other hand, the diverse properties and the unique
+   structure of the MGs render them ideal models to study major open issues
+   including the structural model of disordered materials, glass
+   transition, collective motion and energy landscape. However,
+   understanding the emerging properties and phenomena of MGs still poses
+   enormous challenges, which has stimulated a wealth of efforts, including
+   the development of new experimental approaches, the synthesis of systems
+   with tailored properties, and the advancements in experimental
+   techniques, theoretical models, and numerical simulations. In this
+   Roadmap, we try to provide a broad overview of recent and potential
+   future activities in the MG field, and present a roadmap for the
+   development and applications of MGs by gathering contributions form
+   scientists with diverse backgrounds, illustrating the major challenges
+   and discussing the latest technology and strategy to tackle these
+   challenges with experts covering various developments in general
+   concepts, synthesis and characterisation, and theoretical and simulation
+   methods.},
+  doi = {10.1088/2752-5724/adcfb6},
+  EISSN = {2752-5724},
+  Unique-ID = {WOS:001581828700001}
+}21:T66a,It is a great challenge to optimize the composition and improve the multi-properties of Fe-based metallic glasses (Fe-based MGs) by traditional trial-and-error method. Here, a strategy combining ensemble learning (EL) and non-dominated sorting genetic algorithm-III (NSGA-III) is proposed to efficiently design Fe-based MGs with simultaneous high magnetic property, thermal stability and glass-forming ability (GFA). With alloy compositions as the sole input, four EL models and three linear models are employed to predict saturated magnetic flux density (Bs), onset crystallization temperature (Tx) and maximum casting diameter (Dmax) of Fe-based MGs, respectively. Particle swarm optimization (PSO) algorithm is introduced to optimize hyperparameters of the models. It is found that the PSO-CatBoost model and PSO-ET models with different hyperparameters can better predict Bs, Tx and Dmax with higher accuracy. Further, the effects of key compositions on three properties are qualitatively analyzed based on SHAP analysis and correlation analysis. Finally, taking Fe-B-Si-P-C system as an example, multi-objective optimization based on NSGA-III is executed to obtain Pareto front and 15 Pareto-optimal solutions for three properties. When the Bs is greater than 1.6 T, there are four alloys with Tx and Dmax better than the raw data. At this time, Tx increases by 5.02% to 8.07% and Dmax increases by 52.38% to 72.08%. It is also demonstrated that the sum of Fe and B content is the key factor affecting these three properties. This work provides an efficient strategy for developing new Fe-based MGs with better comprehensive performance.22:T937,@article{JNCS2025,
+  author = {Mo, Runyu and Wang, Peng and Ren, Jingli},
+  title = {Multi-objective optimization of Fe-based metallic glasses on magnetic
+   property, thermal stability and glass forming ability},
+  journal = {Journal of Non-Crystalline Solids},
+  year = {2025},
+  volume = {666},
+  pages = {123666},
+  month = {OCT 15},
+  abstract = {It is a great challenge to optimize the composition and improve the
+   multi-properties of Fe-based metallic glasses (Fe-based MGs) by
+   traditional trial-and-error method. Here, a strategy combining ensemble
+   learning (EL) and non-dominated sorting genetic algorithm-III (NSGA-III)
+   is proposed to efficiently design Fe-based MGs with simultaneous high
+   magnetic property, thermal stability and glass-forming ability (GFA).
+   With alloy compositions as the sole input, four EL models and three
+   linear models are employed to predict saturated magnetic flux density
+   (Bs), onset crystallization temperature (Tx) and maximum casting
+   diameter (Dmax) of Fe-based MGs, respectively. Particle swarm
+   optimization (PSO) algorithm is introduced to optimize hyperparameters
+   of the models. It is found that the PSO-CatBoost model and PSO-ET models
+   with different hyperparameters can better predict Bs, Tx and Dmax with
+   higher accuracy. Further, the effects of key compositions on three
+   properties are qualitatively analyzed based on SHAP analysis and
+   correlation analysis. Finally, taking Fe-B-Si-P-C system as an example,
+   multi-objective optimization based on NSGA-III is executed to obtain
+   Pareto front and 15 Pareto-optimal solutions for three properties. When
+   the Bs is greater than 1.6 T, there are four alloys with Tx and Dmax
+   better than the raw data. At this time, Tx increases by 5.02\% to 8.07\%
+   and Dmax increases by 52.38\% to 72.08\%. It is also demonstrated that
+   the sum of Fe and B content is the key factor affecting these three
+   properties. This work provides an efficient strategy for developing new
+   Fe-based MGs with better comprehensive performance.},
+  doi = {10.1016/j.jnoncrysol.2025.123666},
+  EarlyAccessDate = {JUN 2025},
+  ISSN = {0022-3093},
+  EISSN = {1873-4812},
+  ResearcherID-Numbers = {Ren, Jingli/NMJ-4568-2025},
+  ORCID-Numbers = {Ren, Jingli/0000-0002-5392-291X},
+  Unique-ID = {WOS:001518583100001}
+}23:T5ab,@article{DRM2024,
+  author = {Wang, Peng and Ren, Jingli},
+  title = {Reliable and explainable machine learning for charge transfer/atomic
+   structure relationships of hydrogenated nanodiamonds},
+  journal = {Diamond amd Related Materials},
+  year = {2024},
+  volume = {144},
+  pages = {110931},
+  month = {APR},
+  abstract = {A supervised learning model combined with genetic algorithm is proposed
+   to predict charge transfer efficiency of nanodiamonds. The model is
+   chosen among ten models whose parameters are modified by genetic
+   algorithm with ten -fold cross -validation, ensuring the accuracy of
+   model. Generalization ability and reliability are further verified by
+   prediction error and consistency tests of twin nanodiamonds. A
+   hydrogenated surface nanodiamond with low ionization potential and a
+   clean nanodiamond with low electron affinity are designed based on
+   particle swarm optimization. It is further found via SHAP analysis that
+   electron affinity is inhibited by surfaces with a \{111\} surface below
+   30 % or a \{100\} surface above 80%. Similarly, ionization potential
+   is reduced when the hybrid ratios of sp1 and sp2 are separately greater
+   than 0.501 % or lower than 5.690%.},
+  doi = {10.1016/j.diamond.2024.110931},
+  EarlyAccessDate = {MAR 2024},
+  ISSN = {0925-9635},
+  EISSN = {1879-0062},
+  ResearcherID-Numbers = {Ren, Jingli/NMJ-4568-2025},
+  Unique-ID = {WOS:001205750500001}
+}9:["$","$L17",null,{"dataByLocale":{"zh":{"type":"publication","config":{"type":"publication","title":"论文","description":"我的研究成果列表。","source":"publications.bib"},"publications":[{"id":"Acta2026","title":"Stacking pattern of short-range order units in binary metallic glasses:A hypergraph approach","titleNodes":[{"type":"text","text":"Stacking pattern of short-range order units in binary metallic glasses:A hypergraph approach"}],"authors":[{"name":"Peng Wang","isHighlighted":true,"isCorresponding":false,"isCoAuthor":false},{"name":"Baoan Sun","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Gang Wang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Jingli Ren","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false}],"year":2026,"month":"JAN 1","type":"journal","status":"published","tags":["Hypergraph; Short range order; Maximal clique; Exponential relationship; Binary metallic glass"],"keywords":"$9:props:dataByLocale:zh:publications:0:tags","researchArea":"machine-learning","journal":"Acta Materialia","conference":"","volume":"302","pages":"121654","doi":"10.1016/j.actamat.2025.121654","abstract":"This study investigates stacking patterns between short-range order(SRO) units in three binary metallic glasses by establishing a framework combining hypergraph and molecular dynamics simulation. It is found by maximal clique decomposition that SRO unit at 300 K stacking primarily consists of ternary and quaternary maximal cliques, collectively accounting for about 90% of the total. An exponential relationship between maximal clique population and average atomic radius is established, where the absolute value of a is related to atomic radius ratio. We report a close correlation between the dynamic behavior of Nmc and the glass transition in metallic glasses. A logistic growth model is presented to reveal the evolution of Nmc from initial unlimited growth to hindered growth, with this transition initiating at about 1.16Tg.","description":"This study investigates stacking patterns between short-range order(SRO) units in three binary metallic glasses by establishing a framework combining hypergraph and molecular dynamics simulation.","selected":true,"preview":"Acta2026.png","bibtex":"$18"},{"id":"MF2025","title":"Metallic glass roadmap","titleNodes":[{"type":"text","text":"Metallic glass roadmap"}],"authors":[{"name":"Wei-Hua Wang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Rui Zhao","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Rong Han","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Ying-Hui Shang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Yong Yang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Song-Ling Liu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Shi-Yun Zhang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Yuan-Chao Hu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Yi-Tao Sun","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Ming-Xing Li","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Ling-Xiang Shi","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Ke-Fu Yao","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Jiang Ma","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Hai-Bo Ke","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Yong Zhao","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Bo Zhang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Xing Tong","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Hai-Yang Bai","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Si-Nan Liu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Zhen-Duo Wu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Si Lan","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Qi Cheng","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Jihan Zhou","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Heng Kang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Peng-Fei Guan","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Zhen-Wei Wu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Hua-Ping Zhang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Peng Luo","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Lai-Quan Shen","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Hai-Bin Yu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Sen-Kuan Meng","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Zheng Wang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Hai-Long Peng","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Shuai Ren","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Yu Tong","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Li-Jian Song","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Jun-Tao Huo","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Jun-Qiang Wang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Jing-Li Ren","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Peng Wang","isHighlighted":true,"isCorresponding":false,"isCoAuthor":false},{"name":"Mao-Zhi Li","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Bei-Bei Fan","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Bo Huang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Jun Yi","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Xi-Lei Bian","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Qing Wang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Gang Wang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Min-Qiang Jiang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Yin-Xiao Wang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Zheng-Wang Zhu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Hai-Feng Zhang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Chuan-Kun Zhou","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Ming Liu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Shao-Fan Zhao","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Jing Zhou","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Xue-Song Li","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Bao-An Sun","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Zhen Lu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Shu-Jie Pang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Hu-Yang Li","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Huai-Jun Lin","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Ji Wang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Xing-Yao Wang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Yu-Han Shen","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Cheng-Rong Cao","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Ben-Zhen Tang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Peng Yu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false}],"year":2025,"month":"SEP 1","type":"journal","status":"published","tags":["metallic glasses; entropy regulation; relaxation dynamics;\r\n   high-throughput methods; atomic manufacturing; mechanical properties;\r\n   functional properties"],"keywords":"$9:props:dataByLocale:zh:publications:1:tags","researchArea":"machine-learning","journal":"Materials Futures","conference":"","volume":"4","issue":"3","pages":"033001","doi":"10.1088/2752-5724/adcfb6","abstract":"$19","description":"In this Roadmap, we try to provide a broad overview of recent and potential future activities in the MG field, and present a roadmap for the development and applications of MGs by gathering contributions form scientists with diverse backgrounds.","selected":false,"bibtex":"$1a"},{"id":"JNCS2025","title":"Multi-objective optimization of Fe-based metallic glasses on magnetic property, thermal stability and glass forming ability","titleNodes":[{"type":"text","text":"Multi-objective optimization of Fe-based metallic glasses on magnetic\r\n   property, thermal stability and glass forming ability"}],"authors":[{"name":"Runyu Mo","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Peng Wang","isHighlighted":true,"isCorresponding":false,"isCoAuthor":false},{"name":"Jingli Ren","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false}],"year":2025,"month":"OCT 15","type":"journal","status":"published","tags":[],"keywords":"$9:props:dataByLocale:zh:publications:2:tags","researchArea":"machine-learning","journal":"Journal of Non-Crystalline Solids","conference":"","volume":"666","pages":"123666","doi":"10.1016/j.jnoncrysol.2025.123666","abstract":"$1b","description":"A strategy combining ensemble learning and non-dominated sorting genetic algorithm-III is proposed to efficiently design Fe-based MGs with simultaneous high magnetic property, thermal stability and glass-forming ability.","selected":false,"bibtex":"$1c"},{"id":"DRM2024","title":"Reliable and explainable machine learning for charge transfer/atomic structure relationships of hydrogenated nanodiamonds","titleNodes":[{"type":"text","text":"Reliable and explainable machine learning for charge transfer/atomic\r\n   structure relationships of hydrogenated nanodiamonds"}],"authors":[{"name":"Peng Wang","isHighlighted":true,"isCorresponding":false,"isCoAuthor":false},{"name":"Jingli Ren","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false}],"year":2024,"month":"4","type":"journal","status":"published","tags":[],"keywords":"$9:props:dataByLocale:zh:publications:3:tags","researchArea":"machine-learning","journal":"Diamond amd Related Materials","conference":"","volume":"144","pages":"110931","doi":"10.1016/j.diamond.2024.110931","abstract":"A supervised learning model combined with genetic algorithm is proposed to predict charge transfer efficiency of nanodiamonds. The model is chosen among ten models whose parameters are modified by genetic algorithm with ten -fold cross -validation, ensuring the accuracy of model. Generalization ability and reliability are further verified by prediction error and consistency tests of twin nanodiamonds. A hydrogenated surface nanodiamond with low ionization potential and a clean nanodiamond with low electron affinity are designed based on particle swarm optimization. It is further found via SHAP analysis that electron affinity is inhibited by surfaces with a {111} surface below 30 % or a {100} surface above 80%. Similarly, ionization potential is reduced when the hybrid ratios of sp1 and sp2 are separately greater than 0.501 % or lower than 5.690%.","description":"A supervised learning model combined with genetic algorithm is proposed to predict charge transfer efficiency of nanodiamonds.","selected":true,"preview":"DRM2024.png","bibtex":"$1d"}]},"en":{"type":"publication","config":{"type":"publication","title":"Publications","description":"A collection of my research work.","source":"publications.bib"},"publications":[{"id":"Acta2026","title":"Stacking pattern of short-range order units in binary metallic glasses:A hypergraph approach","titleNodes":[{"type":"text","text":"Stacking pattern of short-range order units in binary metallic glasses:A hypergraph approach"}],"authors":[{"name":"Peng Wang","isHighlighted":true,"isCorresponding":false,"isCoAuthor":false},{"name":"Baoan Sun","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Gang Wang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Jingli Ren","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false}],"year":2026,"month":"JAN 1","type":"journal","status":"published","tags":["Hypergraph; Short range order; Maximal clique; Exponential relationship; Binary metallic glass"],"keywords":"$9:props:dataByLocale:en:publications:0:tags","researchArea":"machine-learning","journal":"Acta Materialia","conference":"","volume":"302","pages":"121654","doi":"10.1016/j.actamat.2025.121654","abstract":"This study investigates stacking patterns between short-range order(SRO) units in three binary metallic glasses by establishing a framework combining hypergraph and molecular dynamics simulation. It is found by maximal clique decomposition that SRO unit at 300 K stacking primarily consists of ternary and quaternary maximal cliques, collectively accounting for about 90% of the total. An exponential relationship between maximal clique population and average atomic radius is established, where the absolute value of a is related to atomic radius ratio. We report a close correlation between the dynamic behavior of Nmc and the glass transition in metallic glasses. A logistic growth model is presented to reveal the evolution of Nmc from initial unlimited growth to hindered growth, with this transition initiating at about 1.16Tg.","description":"This study investigates stacking patterns between short-range order(SRO) units in three binary metallic glasses by establishing a framework combining hypergraph and molecular dynamics simulation.","selected":true,"preview":"Acta2026.png","bibtex":"$1e"},{"id":"MF2025","title":"Metallic glass roadmap","titleNodes":[{"type":"text","text":"Metallic glass roadmap"}],"authors":[{"name":"Wei-Hua Wang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Rui Zhao","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Rong Han","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Ying-Hui Shang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Yong Yang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Song-Ling Liu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Shi-Yun Zhang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Yuan-Chao Hu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Yi-Tao Sun","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Ming-Xing Li","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Ling-Xiang Shi","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Ke-Fu Yao","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Jiang Ma","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Hai-Bo Ke","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Yong Zhao","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Bo Zhang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Xing Tong","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Hai-Yang Bai","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Si-Nan Liu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Zhen-Duo Wu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Si Lan","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Qi Cheng","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Jihan Zhou","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Heng Kang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Peng-Fei Guan","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Zhen-Wei Wu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Hua-Ping Zhang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Peng Luo","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Lai-Quan Shen","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Hai-Bin Yu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Sen-Kuan Meng","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Zheng Wang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Hai-Long Peng","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Shuai Ren","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Yu Tong","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Li-Jian Song","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Jun-Tao Huo","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Jun-Qiang Wang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Jing-Li Ren","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Peng Wang","isHighlighted":true,"isCorresponding":false,"isCoAuthor":false},{"name":"Mao-Zhi Li","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Bei-Bei Fan","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Bo Huang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Jun Yi","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Xi-Lei Bian","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Qing Wang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Gang Wang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Min-Qiang Jiang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Yin-Xiao Wang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Zheng-Wang Zhu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Hai-Feng Zhang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Chuan-Kun Zhou","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Ming Liu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Shao-Fan Zhao","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Jing Zhou","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Xue-Song Li","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Bao-An Sun","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Zhen Lu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Shu-Jie Pang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Hu-Yang Li","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Huai-Jun Lin","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Ji Wang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Xing-Yao Wang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Yu-Han Shen","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Cheng-Rong Cao","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Ben-Zhen Tang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Peng Yu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false}],"year":2025,"month":"SEP 1","type":"journal","status":"published","tags":["metallic glasses; entropy regulation; relaxation dynamics;\r\n   high-throughput methods; atomic manufacturing; mechanical properties;\r\n   functional properties"],"keywords":"$9:props:dataByLocale:en:publications:1:tags","researchArea":"machine-learning","journal":"Materials Futures","conference":"","volume":"4","issue":"3","pages":"033001","doi":"10.1088/2752-5724/adcfb6","abstract":"$1f","description":"In this Roadmap, we try to provide a broad overview of recent and potential future activities in the MG field, and present a roadmap for the development and applications of MGs by gathering contributions form scientists with diverse backgrounds.","selected":false,"bibtex":"$20"},{"id":"JNCS2025","title":"Multi-objective optimization of Fe-based metallic glasses on magnetic property, thermal stability and glass forming ability","titleNodes":[{"type":"text","text":"Multi-objective optimization of Fe-based metallic glasses on magnetic\r\n   property, thermal stability and glass forming ability"}],"authors":[{"name":"Runyu Mo","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Peng Wang","isHighlighted":true,"isCorresponding":false,"isCoAuthor":false},{"name":"Jingli Ren","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false}],"year":2025,"month":"OCT 15","type":"journal","status":"published","tags":[],"keywords":"$9:props:dataByLocale:en:publications:2:tags","researchArea":"machine-learning","journal":"Journal of Non-Crystalline Solids","conference":"","volume":"666","pages":"123666","doi":"10.1016/j.jnoncrysol.2025.123666","abstract":"$21","description":"A strategy combining ensemble learning and non-dominated sorting genetic algorithm-III is proposed to efficiently design Fe-based MGs with simultaneous high magnetic property, thermal stability and glass-forming ability.","selected":false,"bibtex":"$22"},{"id":"DRM2024","title":"Reliable and explainable machine learning for charge transfer/atomic structure relationships of hydrogenated nanodiamonds","titleNodes":[{"type":"text","text":"Reliable and explainable machine learning for charge transfer/atomic\r\n   structure relationships of hydrogenated nanodiamonds"}],"authors":[{"name":"Peng Wang","isHighlighted":true,"isCorresponding":false,"isCoAuthor":false},{"name":"Jingli Ren","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false}],"year":2024,"month":"4","type":"journal","status":"published","tags":[],"keywords":"$9:props:dataByLocale:en:publications:3:tags","researchArea":"machine-learning","journal":"Diamond amd Related Materials","conference":"","volume":"144","pages":"110931","doi":"10.1016/j.diamond.2024.110931","abstract":"A supervised learning model combined with genetic algorithm is proposed to predict charge transfer efficiency of nanodiamonds. The model is chosen among ten models whose parameters are modified by genetic algorithm with ten -fold cross -validation, ensuring the accuracy of model. Generalization ability and reliability are further verified by prediction error and consistency tests of twin nanodiamonds. A hydrogenated surface nanodiamond with low ionization potential and a clean nanodiamond with low electron affinity are designed based on particle swarm optimization. It is further found via SHAP analysis that electron affinity is inhibited by surfaces with a {111} surface below 30 % or a {100} surface above 80%. Similarly, ionization potential is reduced when the hybrid ratios of sp1 and sp2 are separately greater than 0.501 % or lower than 5.690%.","description":"A supervised learning model combined with genetic algorithm is proposed to predict charge transfer efficiency of nanodiamonds.","selected":true,"preview":"DRM2024.png","bibtex":"$23"}]}},"defaultLocale":"en"}]
+e:null
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+d:null
+16:{"metadata":[["$","title","0",{"children":"Publications | Peng Wang"}],["$","meta","1",{"name":"description","content":"A collection of my research work."}],["$","meta","2",{"name":"author","content":"Peng Wang"}],["$","meta","3",{"name":"keywords","content":"Peng Wang,PhD,Research,ZhengZhou University"}],["$","meta","4",{"name":"creator","content":"Peng Wang"}],["$","meta","5",{"name":"publisher","content":"Peng Wang"}],["$","meta","6",{"property":"og:title","content":"Peng Wang"}],["$","meta","7",{"property":"og:description","content":"PhD student at ZhengZhou University."}],["$","meta","8",{"property":"og:site_name","content":"Peng Wang's Academic Website"}],["$","meta","9",{"property":"og:locale","content":"en_US"}],["$","meta","10",{"property":"og:type","content":"website"}],["$","meta","11",{"name":"twitter:card","content":"summary"}],["$","meta","12",{"name":"twitter:title","content":"Peng Wang"}],["$","meta","13",{"name":"twitter:description","content":"PhD student at ZhengZhou University."}],["$","link","14",{"rel":"icon","href":"/favicon.svg"}]],"error":null,"digest":"$undefined"}
+10:{"metadata":"$16:metadata","error":null,"digest":"$undefined"}
